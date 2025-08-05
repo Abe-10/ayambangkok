@@ -4,16 +4,12 @@
     <link rel="stylesheet" href="lanjot.css">
     <title>DATA DIRI SAYA</title>
     <style> 
-        
-        
         body {
-            
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #f4f6f9; 
             text-align: center;
         }
-
         header {
             background-color: #4a90e2;
             color: white;
@@ -21,11 +17,10 @@
             margin-bottom: 30px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-
         header h1 {
             margin: 0;
+            position: relative; 
         }
-
         nav a {
             text-decoration: none;
             margin: 0 15px;
@@ -35,33 +30,28 @@
         nav a:hover {
             text-decoration: underline;
         }
-
         section {
-            background: white;
-            max-width: 600px;
+            background: rgb(194, 166, 166);
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         img {
-            
             width: 200px;
             border-radius: 10px;
             margin-bottom: 15px;
+            position: relative; 
         }
-
         ul {
             list-style: none;
             padding: 0;
         }
-
         ul li::before {
             content: "✅ "; 
             color: #4a90e2;
         }
-
         @media (max-width: 600px) {
             section {
                 width: 90%;
@@ -72,7 +62,7 @@
 <body>
 
     <header>
-        <h1>DATA DIRI</h1>
+        <h1 id="judul">DATA DIRI</h1>
         <nav>
             <a href="#tentang">Tentang</a>
             <a href="#hobi">Hobi</a>
@@ -80,7 +70,7 @@
         </nav>
     </header>
 
-    <img src="c1ac9e44-073a-4b21-8586-1f5efa04e992.jpeg"
+    <img src="c1ac9e44-073a-4b21-8586-1f5efa04e992.jpeg" alt="Foto Profil" id="foto">
 
     <section id="tentang">
         <h2>Tentang Saya</h2>
@@ -100,8 +90,11 @@
 
     <section id="kontak">
         <h2>Kontak</h2>
-        <p><a href="https://www.instagram.com/abjddtimoo?igsh=YzJmaXJ5YWlmNGt1&utm_source=qr"> @abjddtimoo</a></p></p>
-    </section>
+        <p><a href="https://www.instagram.com/abjddtimoo" target="_blank">@abjddtimoo</a></p>
+    </section> 
+
+    <script src="don.js"></script>
 
 </body>
 </html>
+
